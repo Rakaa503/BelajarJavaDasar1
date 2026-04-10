@@ -11,9 +11,9 @@ import java.util.Scanner;
  * @author ASUS
  */
 public class NilaiMahasiswa {
-      Scanner Scan = new Scanner(System.in);
-        
-        // Misal: 2 Mahasiswa, masimg-masing punya 3 nilai mapel
+    public static void main(String[] args) {
+        Scanner Scan = new Scanner(System.in);
+         // Misal: 2 Mahasiswa, masimg-masing punya 3 nilai mapel
         int jumlahMahasiswa = 2;
         int jumlahMapel = 3;
         
@@ -48,5 +48,9 @@ public class NilaiMahasiswa {
         // TODO code application logic here
     }
     
-    
 }
+
+        // TODO code application logic here
+   
+
+    
