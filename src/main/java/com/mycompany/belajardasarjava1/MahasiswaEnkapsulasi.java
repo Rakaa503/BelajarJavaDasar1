@@ -4,47 +4,49 @@
  */
 package com.mycompany.belajardasarjava1;
 
+
 /**
  *
  * @author ASUS
  */
 public class MahasiswaEnkapsulasi {
-    // 1. Atribut dibuat PRIVATE (tidak bisa langsung diakses di luar)
     private String nama;
     private int umur;
     
-    // 2. Constructor
     public MahasiswaEnkapsulasi(String nama, int umur) {
         this.nama = nama;
         this.umur = umur;
     }
     
-    // 3. Getter : Method untuk MENGAMBIL nilai atribut
-    // Nama method standar : getNamaAtribut()
+// 3. Getter; Method untuk MENGAMBILnilai atribut
+    // Namamethod standar: getNamaAtribut()
     public String getNama() {
         return nama;
     }
     
-    public int getUmur() {
-        return umur;
-        
-    }
-    // 4. Setter : Method untuk MENGUBAH nilai atribut
-    // Nama method standar : setNamaAtribut(tipe parameter)
-    public void setNama(String namaBaru) {
-        this.nama = namaBaru;
-    }
+public int getUmur() {
+    return umur;
     
-    public void setUmur(int umurBaru) {
-        // VALIDASI : Hanya terima umur positif
-        if (umurBaru > 0){
-            this.umur= umurBaru;
-        } else {
-            System.out.println("Eror: Umur tidak boleh negatif atau nol");
-        }
-    }
+}
+
+public void setNama(String namaBaru) {
+    this.nama = namaBaru;
+}
+
+public void setUmur(int umurBaru) {
     
-    public void tampilInfo() {
-        System.out.println("Nama : " + ", Umur: " + umur);
+    if (umurBaru > 0) {
+        this.umur = umurBaru;
+   
+        System.out.println("ERROR: Umur tidak boleh negatif atau nol!");
     }
 }
+
+public void tampilInfo() {
+    System.out.println("Nama: " +nama + ", Umur: " + umur);
+    
+}
+
+}
+
+        
