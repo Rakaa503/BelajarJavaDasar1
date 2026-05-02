@@ -47,6 +47,3 @@ public void tarik(double jumlah) {
     }
 }
     }
-  
-    
-    
